@@ -1,0 +1,5 @@
+services:
+  article.search_filter:
+    parent: 'api_platform.doctrine.orm.search_filter'
+    arguments: [{ title: 'partial', content: 'partial'}]
+    tags: ['api_platform.filter']
